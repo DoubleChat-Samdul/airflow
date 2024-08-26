@@ -93,3 +93,143 @@ SyntaxError: invalid syntax
 [2024-08-26T17:15:43.092+0900] {logging_mixin.py:188} INFO - [2024-08-26T17:15:43.091+0900] {dag.py:3089} INFO - Sync 1 DAGs
 [2024-08-26T17:15:43.123+0900] {logging_mixin.py:188} INFO - [2024-08-26T17:15:43.122+0900] {dag.py:3947} INFO - Setting next_dagrun for send_reminder to 2024-08-24 09:30:00+00:00, run_after=2024-08-25 09:30:00+00:00
 [2024-08-26T17:15:43.150+0900] {processor.py:183} INFO - Processing /home/kyuseok00/teamproj/airflow/dags/time.py took 0.130 seconds
+[2024-08-26T17:17:06.765+0900] {processor.py:161} INFO - Started process (PID=84358) to work on /home/kyuseok00/teamproj/airflow/dags/time.py
+[2024-08-26T17:17:06.774+0900] {processor.py:830} INFO - Processing file /home/kyuseok00/teamproj/airflow/dags/time.py for tasks to queue
+[2024-08-26T17:17:06.776+0900] {logging_mixin.py:188} INFO - [2024-08-26T17:17:06.775+0900] {dagbag.py:545} INFO - Filling up the DagBag from /home/kyuseok00/teamproj/airflow/dags/time.py
+[2024-08-26T17:17:06.837+0900] {processor.py:840} INFO - DAG(s) 'send_reminder' retrieved from /home/kyuseok00/teamproj/airflow/dags/time.py
+[2024-08-26T17:17:06.845+0900] {logging_mixin.py:188} INFO - [2024-08-26T17:17:06.845+0900] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-08-26T17:17:06.868+0900] {logging_mixin.py:188} INFO - [2024-08-26T17:17:06.868+0900] {dag.py:3947} INFO - Setting next_dagrun for send_reminder to 2024-08-24 09:30:00+00:00, run_after=2024-08-25 09:30:00+00:00
+[2024-08-26T17:17:06.892+0900] {processor.py:183} INFO - Processing /home/kyuseok00/teamproj/airflow/dags/time.py took 0.133 seconds
+[2024-08-26T17:17:37.609+0900] {processor.py:161} INFO - Started process (PID=84645) to work on /home/kyuseok00/teamproj/airflow/dags/time.py
+[2024-08-26T17:17:37.611+0900] {processor.py:830} INFO - Processing file /home/kyuseok00/teamproj/airflow/dags/time.py for tasks to queue
+[2024-08-26T17:17:37.614+0900] {logging_mixin.py:188} INFO - [2024-08-26T17:17:37.614+0900] {dagbag.py:545} INFO - Filling up the DagBag from /home/kyuseok00/teamproj/airflow/dags/time.py
+[2024-08-26T17:17:37.666+0900] {processor.py:840} INFO - DAG(s) 'send_reminder' retrieved from /home/kyuseok00/teamproj/airflow/dags/time.py
+[2024-08-26T17:17:37.752+0900] {logging_mixin.py:188} INFO - [2024-08-26T17:17:37.752+0900] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-08-26T17:17:37.768+0900] {logging_mixin.py:188} INFO - [2024-08-26T17:17:37.768+0900] {dag.py:3947} INFO - Setting next_dagrun for send_reminder to 2024-08-24 09:30:00+00:00, run_after=2024-08-25 09:30:00+00:00
+[2024-08-26T17:17:37.792+0900] {processor.py:183} INFO - Processing /home/kyuseok00/teamproj/airflow/dags/time.py took 0.193 seconds
+[2024-08-26T17:18:08.811+0900] {processor.py:161} INFO - Started process (PID=84649) to work on /home/kyuseok00/teamproj/airflow/dags/time.py
+[2024-08-26T17:18:08.820+0900] {processor.py:830} INFO - Processing file /home/kyuseok00/teamproj/airflow/dags/time.py for tasks to queue
+[2024-08-26T17:18:08.823+0900] {logging_mixin.py:188} INFO - [2024-08-26T17:18:08.822+0900] {dagbag.py:545} INFO - Filling up the DagBag from /home/kyuseok00/teamproj/airflow/dags/time.py
+[2024-08-26T17:18:08.886+0900] {processor.py:840} INFO - DAG(s) 'send_reminder' retrieved from /home/kyuseok00/teamproj/airflow/dags/time.py
+[2024-08-26T17:18:08.914+0900] {logging_mixin.py:188} INFO - [2024-08-26T17:18:08.913+0900] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-08-26T17:18:08.939+0900] {logging_mixin.py:188} INFO - [2024-08-26T17:18:08.939+0900] {dag.py:3947} INFO - Setting next_dagrun for send_reminder to 2024-08-24 09:30:00+00:00, run_after=2024-08-25 09:30:00+00:00
+[2024-08-26T17:18:08.970+0900] {processor.py:183} INFO - Processing /home/kyuseok00/teamproj/airflow/dags/time.py took 0.168 seconds
+[2024-08-26T17:18:39.286+0900] {processor.py:161} INFO - Started process (PID=84651) to work on /home/kyuseok00/teamproj/airflow/dags/time.py
+[2024-08-26T17:18:39.294+0900] {processor.py:830} INFO - Processing file /home/kyuseok00/teamproj/airflow/dags/time.py for tasks to queue
+[2024-08-26T17:18:39.296+0900] {logging_mixin.py:188} INFO - [2024-08-26T17:18:39.296+0900] {dagbag.py:545} INFO - Filling up the DagBag from /home/kyuseok00/teamproj/airflow/dags/time.py
+[2024-08-26T17:18:39.344+0900] {processor.py:840} INFO - DAG(s) 'send_reminder' retrieved from /home/kyuseok00/teamproj/airflow/dags/time.py
+[2024-08-26T17:18:39.366+0900] {logging_mixin.py:188} INFO - [2024-08-26T17:18:39.366+0900] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-08-26T17:18:39.386+0900] {logging_mixin.py:188} INFO - [2024-08-26T17:18:39.386+0900] {dag.py:3947} INFO - Setting next_dagrun for send_reminder to 2024-08-24 09:30:00+00:00, run_after=2024-08-25 09:30:00+00:00
+[2024-08-26T17:18:39.413+0900] {processor.py:183} INFO - Processing /home/kyuseok00/teamproj/airflow/dags/time.py took 0.133 seconds
+[2024-08-26T17:19:10.503+0900] {processor.py:161} INFO - Started process (PID=84653) to work on /home/kyuseok00/teamproj/airflow/dags/time.py
+[2024-08-26T17:19:10.512+0900] {processor.py:830} INFO - Processing file /home/kyuseok00/teamproj/airflow/dags/time.py for tasks to queue
+[2024-08-26T17:19:10.514+0900] {logging_mixin.py:188} INFO - [2024-08-26T17:19:10.513+0900] {dagbag.py:545} INFO - Filling up the DagBag from /home/kyuseok00/teamproj/airflow/dags/time.py
+[2024-08-26T17:19:10.560+0900] {processor.py:840} INFO - DAG(s) 'send_reminder' retrieved from /home/kyuseok00/teamproj/airflow/dags/time.py
+[2024-08-26T17:19:10.580+0900] {logging_mixin.py:188} INFO - [2024-08-26T17:19:10.580+0900] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-08-26T17:19:10.600+0900] {logging_mixin.py:188} INFO - [2024-08-26T17:19:10.600+0900] {dag.py:3947} INFO - Setting next_dagrun for send_reminder to 2024-08-24 09:30:00+00:00, run_after=2024-08-25 09:30:00+00:00
+[2024-08-26T17:19:10.624+0900] {processor.py:183} INFO - Processing /home/kyuseok00/teamproj/airflow/dags/time.py took 0.126 seconds
+[2024-08-26T17:19:40.806+0900] {processor.py:161} INFO - Started process (PID=84655) to work on /home/kyuseok00/teamproj/airflow/dags/time.py
+[2024-08-26T17:19:40.815+0900] {processor.py:830} INFO - Processing file /home/kyuseok00/teamproj/airflow/dags/time.py for tasks to queue
+[2024-08-26T17:19:40.817+0900] {logging_mixin.py:188} INFO - [2024-08-26T17:19:40.816+0900] {dagbag.py:545} INFO - Filling up the DagBag from /home/kyuseok00/teamproj/airflow/dags/time.py
+[2024-08-26T17:19:40.866+0900] {processor.py:840} INFO - DAG(s) 'send_reminder' retrieved from /home/kyuseok00/teamproj/airflow/dags/time.py
+[2024-08-26T17:19:40.886+0900] {logging_mixin.py:188} INFO - [2024-08-26T17:19:40.886+0900] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-08-26T17:19:40.904+0900] {logging_mixin.py:188} INFO - [2024-08-26T17:19:40.904+0900] {dag.py:3947} INFO - Setting next_dagrun for send_reminder to 2024-08-24 09:30:00+00:00, run_after=2024-08-25 09:30:00+00:00
+[2024-08-26T17:19:40.927+0900] {processor.py:183} INFO - Processing /home/kyuseok00/teamproj/airflow/dags/time.py took 0.128 seconds
+[2024-08-26T17:20:11.090+0900] {processor.py:161} INFO - Started process (PID=84660) to work on /home/kyuseok00/teamproj/airflow/dags/time.py
+[2024-08-26T17:20:11.099+0900] {processor.py:830} INFO - Processing file /home/kyuseok00/teamproj/airflow/dags/time.py for tasks to queue
+[2024-08-26T17:20:11.101+0900] {logging_mixin.py:188} INFO - [2024-08-26T17:20:11.101+0900] {dagbag.py:545} INFO - Filling up the DagBag from /home/kyuseok00/teamproj/airflow/dags/time.py
+[2024-08-26T17:20:11.152+0900] {processor.py:840} INFO - DAG(s) 'send_reminder' retrieved from /home/kyuseok00/teamproj/airflow/dags/time.py
+[2024-08-26T17:20:11.174+0900] {logging_mixin.py:188} INFO - [2024-08-26T17:20:11.174+0900] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-08-26T17:20:11.194+0900] {logging_mixin.py:188} INFO - [2024-08-26T17:20:11.193+0900] {dag.py:3947} INFO - Setting next_dagrun for send_reminder to 2024-08-24 09:30:00+00:00, run_after=2024-08-25 09:30:00+00:00
+[2024-08-26T17:20:11.216+0900] {processor.py:183} INFO - Processing /home/kyuseok00/teamproj/airflow/dags/time.py took 0.132 seconds
+[2024-08-26T17:20:41.382+0900] {processor.py:161} INFO - Started process (PID=84662) to work on /home/kyuseok00/teamproj/airflow/dags/time.py
+[2024-08-26T17:20:41.383+0900] {processor.py:830} INFO - Processing file /home/kyuseok00/teamproj/airflow/dags/time.py for tasks to queue
+[2024-08-26T17:20:41.384+0900] {logging_mixin.py:188} INFO - [2024-08-26T17:20:41.384+0900] {dagbag.py:545} INFO - Filling up the DagBag from /home/kyuseok00/teamproj/airflow/dags/time.py
+[2024-08-26T17:20:41.437+0900] {processor.py:840} INFO - DAG(s) 'send_reminder' retrieved from /home/kyuseok00/teamproj/airflow/dags/time.py
+[2024-08-26T17:20:41.457+0900] {logging_mixin.py:188} INFO - [2024-08-26T17:20:41.457+0900] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-08-26T17:20:41.477+0900] {logging_mixin.py:188} INFO - [2024-08-26T17:20:41.477+0900] {dag.py:3947} INFO - Setting next_dagrun for send_reminder to 2024-08-24 09:30:00+00:00, run_after=2024-08-25 09:30:00+00:00
+[2024-08-26T17:20:41.500+0900] {processor.py:183} INFO - Processing /home/kyuseok00/teamproj/airflow/dags/time.py took 0.123 seconds
+[2024-08-26T17:21:11.624+0900] {processor.py:161} INFO - Started process (PID=84664) to work on /home/kyuseok00/teamproj/airflow/dags/time.py
+[2024-08-26T17:21:11.633+0900] {processor.py:830} INFO - Processing file /home/kyuseok00/teamproj/airflow/dags/time.py for tasks to queue
+[2024-08-26T17:21:11.635+0900] {logging_mixin.py:188} INFO - [2024-08-26T17:21:11.635+0900] {dagbag.py:545} INFO - Filling up the DagBag from /home/kyuseok00/teamproj/airflow/dags/time.py
+[2024-08-26T17:21:11.682+0900] {processor.py:840} INFO - DAG(s) 'send_reminder' retrieved from /home/kyuseok00/teamproj/airflow/dags/time.py
+[2024-08-26T17:21:11.702+0900] {logging_mixin.py:188} INFO - [2024-08-26T17:21:11.702+0900] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-08-26T17:21:11.721+0900] {logging_mixin.py:188} INFO - [2024-08-26T17:21:11.721+0900] {dag.py:3947} INFO - Setting next_dagrun for send_reminder to 2024-08-24 09:30:00+00:00, run_after=2024-08-25 09:30:00+00:00
+[2024-08-26T17:21:11.743+0900] {processor.py:183} INFO - Processing /home/kyuseok00/teamproj/airflow/dags/time.py took 0.125 seconds
+[2024-08-26T17:21:41.877+0900] {processor.py:161} INFO - Started process (PID=84666) to work on /home/kyuseok00/teamproj/airflow/dags/time.py
+[2024-08-26T17:21:41.886+0900] {processor.py:830} INFO - Processing file /home/kyuseok00/teamproj/airflow/dags/time.py for tasks to queue
+[2024-08-26T17:21:41.888+0900] {logging_mixin.py:188} INFO - [2024-08-26T17:21:41.887+0900] {dagbag.py:545} INFO - Filling up the DagBag from /home/kyuseok00/teamproj/airflow/dags/time.py
+[2024-08-26T17:21:41.933+0900] {processor.py:840} INFO - DAG(s) 'send_reminder' retrieved from /home/kyuseok00/teamproj/airflow/dags/time.py
+[2024-08-26T17:21:41.955+0900] {logging_mixin.py:188} INFO - [2024-08-26T17:21:41.955+0900] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-08-26T17:21:41.974+0900] {logging_mixin.py:188} INFO - [2024-08-26T17:21:41.973+0900] {dag.py:3947} INFO - Setting next_dagrun for send_reminder to 2024-08-24 09:30:00+00:00, run_after=2024-08-25 09:30:00+00:00
+[2024-08-26T17:21:41.996+0900] {processor.py:183} INFO - Processing /home/kyuseok00/teamproj/airflow/dags/time.py took 0.124 seconds
+[2024-08-26T17:22:12.166+0900] {processor.py:161} INFO - Started process (PID=84669) to work on /home/kyuseok00/teamproj/airflow/dags/time.py
+[2024-08-26T17:22:12.175+0900] {processor.py:830} INFO - Processing file /home/kyuseok00/teamproj/airflow/dags/time.py for tasks to queue
+[2024-08-26T17:22:12.177+0900] {logging_mixin.py:188} INFO - [2024-08-26T17:22:12.177+0900] {dagbag.py:545} INFO - Filling up the DagBag from /home/kyuseok00/teamproj/airflow/dags/time.py
+[2024-08-26T17:22:12.229+0900] {processor.py:840} INFO - DAG(s) 'send_reminder' retrieved from /home/kyuseok00/teamproj/airflow/dags/time.py
+[2024-08-26T17:22:12.254+0900] {logging_mixin.py:188} INFO - [2024-08-26T17:22:12.253+0900] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-08-26T17:22:12.276+0900] {logging_mixin.py:188} INFO - [2024-08-26T17:22:12.276+0900] {dag.py:3947} INFO - Setting next_dagrun for send_reminder to 2024-08-24 09:30:00+00:00, run_after=2024-08-25 09:30:00+00:00
+[2024-08-26T17:22:12.302+0900] {processor.py:183} INFO - Processing /home/kyuseok00/teamproj/airflow/dags/time.py took 0.142 seconds
+[2024-08-26T17:22:42.415+0900] {processor.py:161} INFO - Started process (PID=84671) to work on /home/kyuseok00/teamproj/airflow/dags/time.py
+[2024-08-26T17:22:42.424+0900] {processor.py:830} INFO - Processing file /home/kyuseok00/teamproj/airflow/dags/time.py for tasks to queue
+[2024-08-26T17:22:42.426+0900] {logging_mixin.py:188} INFO - [2024-08-26T17:22:42.426+0900] {dagbag.py:545} INFO - Filling up the DagBag from /home/kyuseok00/teamproj/airflow/dags/time.py
+[2024-08-26T17:22:42.473+0900] {processor.py:840} INFO - DAG(s) 'send_reminder' retrieved from /home/kyuseok00/teamproj/airflow/dags/time.py
+[2024-08-26T17:22:42.494+0900] {logging_mixin.py:188} INFO - [2024-08-26T17:22:42.494+0900] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-08-26T17:22:42.513+0900] {logging_mixin.py:188} INFO - [2024-08-26T17:22:42.513+0900] {dag.py:3947} INFO - Setting next_dagrun for send_reminder to 2024-08-24 09:30:00+00:00, run_after=2024-08-25 09:30:00+00:00
+[2024-08-26T17:22:42.538+0900] {processor.py:183} INFO - Processing /home/kyuseok00/teamproj/airflow/dags/time.py took 0.128 seconds
+[2024-08-26T17:23:12.689+0900] {processor.py:161} INFO - Started process (PID=84673) to work on /home/kyuseok00/teamproj/airflow/dags/time.py
+[2024-08-26T17:23:12.691+0900] {processor.py:830} INFO - Processing file /home/kyuseok00/teamproj/airflow/dags/time.py for tasks to queue
+[2024-08-26T17:23:12.693+0900] {logging_mixin.py:188} INFO - [2024-08-26T17:23:12.693+0900] {dagbag.py:545} INFO - Filling up the DagBag from /home/kyuseok00/teamproj/airflow/dags/time.py
+[2024-08-26T17:23:12.747+0900] {processor.py:840} INFO - DAG(s) 'send_reminder' retrieved from /home/kyuseok00/teamproj/airflow/dags/time.py
+[2024-08-26T17:23:12.770+0900] {logging_mixin.py:188} INFO - [2024-08-26T17:23:12.769+0900] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-08-26T17:23:12.789+0900] {logging_mixin.py:188} INFO - [2024-08-26T17:23:12.788+0900] {dag.py:3947} INFO - Setting next_dagrun for send_reminder to 2024-08-24 09:30:00+00:00, run_after=2024-08-25 09:30:00+00:00
+[2024-08-26T17:23:12.813+0900] {processor.py:183} INFO - Processing /home/kyuseok00/teamproj/airflow/dags/time.py took 0.134 seconds
+[2024-08-26T17:23:42.944+0900] {processor.py:161} INFO - Started process (PID=84675) to work on /home/kyuseok00/teamproj/airflow/dags/time.py
+[2024-08-26T17:23:42.953+0900] {processor.py:830} INFO - Processing file /home/kyuseok00/teamproj/airflow/dags/time.py for tasks to queue
+[2024-08-26T17:23:42.955+0900] {logging_mixin.py:188} INFO - [2024-08-26T17:23:42.955+0900] {dagbag.py:545} INFO - Filling up the DagBag from /home/kyuseok00/teamproj/airflow/dags/time.py
+[2024-08-26T17:23:43.010+0900] {processor.py:840} INFO - DAG(s) 'send_reminder' retrieved from /home/kyuseok00/teamproj/airflow/dags/time.py
+[2024-08-26T17:23:43.031+0900] {logging_mixin.py:188} INFO - [2024-08-26T17:23:43.031+0900] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-08-26T17:23:43.051+0900] {logging_mixin.py:188} INFO - [2024-08-26T17:23:43.051+0900] {dag.py:3947} INFO - Setting next_dagrun for send_reminder to 2024-08-24 09:30:00+00:00, run_after=2024-08-25 09:30:00+00:00
+[2024-08-26T17:23:43.074+0900] {processor.py:183} INFO - Processing /home/kyuseok00/teamproj/airflow/dags/time.py took 0.136 seconds
+[2024-08-26T17:24:13.220+0900] {processor.py:161} INFO - Started process (PID=84677) to work on /home/kyuseok00/teamproj/airflow/dags/time.py
+[2024-08-26T17:24:13.220+0900] {processor.py:830} INFO - Processing file /home/kyuseok00/teamproj/airflow/dags/time.py for tasks to queue
+[2024-08-26T17:24:13.222+0900] {logging_mixin.py:188} INFO - [2024-08-26T17:24:13.222+0900] {dagbag.py:545} INFO - Filling up the DagBag from /home/kyuseok00/teamproj/airflow/dags/time.py
+[2024-08-26T17:24:13.271+0900] {processor.py:840} INFO - DAG(s) 'send_reminder' retrieved from /home/kyuseok00/teamproj/airflow/dags/time.py
+[2024-08-26T17:24:13.290+0900] {logging_mixin.py:188} INFO - [2024-08-26T17:24:13.290+0900] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-08-26T17:24:13.310+0900] {logging_mixin.py:188} INFO - [2024-08-26T17:24:13.310+0900] {dag.py:3947} INFO - Setting next_dagrun for send_reminder to 2024-08-24 09:30:00+00:00, run_after=2024-08-25 09:30:00+00:00
+[2024-08-26T17:24:13.335+0900] {processor.py:183} INFO - Processing /home/kyuseok00/teamproj/airflow/dags/time.py took 0.122 seconds
+[2024-08-26T17:24:43.557+0900] {processor.py:161} INFO - Started process (PID=84767) to work on /home/kyuseok00/teamproj/airflow/dags/time.py
+[2024-08-26T17:24:43.559+0900] {processor.py:830} INFO - Processing file /home/kyuseok00/teamproj/airflow/dags/time.py for tasks to queue
+[2024-08-26T17:24:43.562+0900] {logging_mixin.py:188} INFO - [2024-08-26T17:24:43.562+0900] {dagbag.py:545} INFO - Filling up the DagBag from /home/kyuseok00/teamproj/airflow/dags/time.py
+[2024-08-26T17:24:43.613+0900] {processor.py:840} INFO - DAG(s) 'send_reminder' retrieved from /home/kyuseok00/teamproj/airflow/dags/time.py
+[2024-08-26T17:24:43.633+0900] {logging_mixin.py:188} INFO - [2024-08-26T17:24:43.632+0900] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-08-26T17:24:43.651+0900] {logging_mixin.py:188} INFO - [2024-08-26T17:24:43.651+0900] {dag.py:3947} INFO - Setting next_dagrun for send_reminder to 2024-08-24 09:30:00+00:00, run_after=2024-08-25 09:30:00+00:00
+[2024-08-26T17:24:43.674+0900] {processor.py:183} INFO - Processing /home/kyuseok00/teamproj/airflow/dags/time.py took 0.129 seconds
+[2024-08-26T17:25:13.909+0900] {processor.py:161} INFO - Started process (PID=84769) to work on /home/kyuseok00/teamproj/airflow/dags/time.py
+[2024-08-26T17:25:13.910+0900] {processor.py:830} INFO - Processing file /home/kyuseok00/teamproj/airflow/dags/time.py for tasks to queue
+[2024-08-26T17:25:13.913+0900] {logging_mixin.py:188} INFO - [2024-08-26T17:25:13.912+0900] {dagbag.py:545} INFO - Filling up the DagBag from /home/kyuseok00/teamproj/airflow/dags/time.py
+[2024-08-26T17:25:13.961+0900] {processor.py:840} INFO - DAG(s) 'send_reminder' retrieved from /home/kyuseok00/teamproj/airflow/dags/time.py
+[2024-08-26T17:25:13.977+0900] {logging_mixin.py:188} INFO - [2024-08-26T17:25:13.977+0900] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-08-26T17:25:13.993+0900] {logging_mixin.py:188} INFO - [2024-08-26T17:25:13.993+0900] {dag.py:3947} INFO - Setting next_dagrun for send_reminder to 2024-08-24 09:30:00+00:00, run_after=2024-08-25 09:30:00+00:00
+[2024-08-26T17:25:14.015+0900] {processor.py:183} INFO - Processing /home/kyuseok00/teamproj/airflow/dags/time.py took 0.115 seconds
+[2024-08-26T17:25:44.307+0900] {processor.py:161} INFO - Started process (PID=84771) to work on /home/kyuseok00/teamproj/airflow/dags/time.py
+[2024-08-26T17:25:44.317+0900] {processor.py:830} INFO - Processing file /home/kyuseok00/teamproj/airflow/dags/time.py for tasks to queue
+[2024-08-26T17:25:44.319+0900] {logging_mixin.py:188} INFO - [2024-08-26T17:25:44.318+0900] {dagbag.py:545} INFO - Filling up the DagBag from /home/kyuseok00/teamproj/airflow/dags/time.py
+[2024-08-26T17:25:44.369+0900] {processor.py:840} INFO - DAG(s) 'send_reminder' retrieved from /home/kyuseok00/teamproj/airflow/dags/time.py
+[2024-08-26T17:25:44.388+0900] {logging_mixin.py:188} INFO - [2024-08-26T17:25:44.388+0900] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-08-26T17:25:44.408+0900] {logging_mixin.py:188} INFO - [2024-08-26T17:25:44.408+0900] {dag.py:3947} INFO - Setting next_dagrun for send_reminder to 2024-08-24 09:30:00+00:00, run_after=2024-08-25 09:30:00+00:00
+[2024-08-26T17:25:44.428+0900] {processor.py:183} INFO - Processing /home/kyuseok00/teamproj/airflow/dags/time.py took 0.133 seconds
+[2024-08-26T17:26:14.693+0900] {processor.py:161} INFO - Started process (PID=84775) to work on /home/kyuseok00/teamproj/airflow/dags/time.py
+[2024-08-26T17:26:14.694+0900] {processor.py:830} INFO - Processing file /home/kyuseok00/teamproj/airflow/dags/time.py for tasks to queue
+[2024-08-26T17:26:14.696+0900] {logging_mixin.py:188} INFO - [2024-08-26T17:26:14.696+0900] {dagbag.py:545} INFO - Filling up the DagBag from /home/kyuseok00/teamproj/airflow/dags/time.py
+[2024-08-26T17:26:14.742+0900] {processor.py:840} INFO - DAG(s) 'send_reminder' retrieved from /home/kyuseok00/teamproj/airflow/dags/time.py
+[2024-08-26T17:26:14.761+0900] {logging_mixin.py:188} INFO - [2024-08-26T17:26:14.761+0900] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-08-26T17:26:14.780+0900] {logging_mixin.py:188} INFO - [2024-08-26T17:26:14.780+0900] {dag.py:3947} INFO - Setting next_dagrun for send_reminder to 2024-08-24 09:30:00+00:00, run_after=2024-08-25 09:30:00+00:00
+[2024-08-26T17:26:14.802+0900] {processor.py:183} INFO - Processing /home/kyuseok00/teamproj/airflow/dags/time.py took 0.119 seconds
+[2024-08-26T17:26:45.045+0900] {processor.py:161} INFO - Started process (PID=84777) to work on /home/kyuseok00/teamproj/airflow/dags/time.py
+[2024-08-26T17:26:45.054+0900] {processor.py:830} INFO - Processing file /home/kyuseok00/teamproj/airflow/dags/time.py for tasks to queue
+[2024-08-26T17:26:45.055+0900] {logging_mixin.py:188} INFO - [2024-08-26T17:26:45.055+0900] {dagbag.py:545} INFO - Filling up the DagBag from /home/kyuseok00/teamproj/airflow/dags/time.py
+[2024-08-26T17:26:45.095+0900] {processor.py:840} INFO - DAG(s) 'send_reminder' retrieved from /home/kyuseok00/teamproj/airflow/dags/time.py
+[2024-08-26T17:26:45.113+0900] {logging_mixin.py:188} INFO - [2024-08-26T17:26:45.113+0900] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-08-26T17:26:45.130+0900] {logging_mixin.py:188} INFO - [2024-08-26T17:26:45.130+0900] {dag.py:3947} INFO - Setting next_dagrun for send_reminder to 2024-08-24 09:30:00+00:00, run_after=2024-08-25 09:30:00+00:00
+[2024-08-26T17:26:45.150+0900] {processor.py:183} INFO - Processing /home/kyuseok00/teamproj/airflow/dags/time.py took 0.109 seconds
