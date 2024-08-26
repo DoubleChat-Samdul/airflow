@@ -17,7 +17,7 @@ default_args = {
 dag = DAG(
     'data_for_audit',
     default_args=default_args,
-    description='Sends a reminder message to the chatroom at 9:30 AM',
+    description='fetch data from kafka hourly for audit',
     schedule_interval='@hourly',
     catchup=False,
 )

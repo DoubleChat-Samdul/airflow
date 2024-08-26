@@ -106,3 +106,10 @@ Traceback (most recent call last):
 airflow.exceptions.AirflowException: The key 'data for audit' has to be made of alphanumeric characters, dashes, dots and underscores exclusively
 [2024-08-26T17:14:00.983+0900] {processor.py:842} WARNING - No viable dags retrieved from /home/kyuseok00/teamproj/airflow/dags/audit.py
 [2024-08-26T17:14:01.000+0900] {processor.py:183} INFO - Processing /home/kyuseok00/teamproj/airflow/dags/audit.py took 0.068 seconds
+[2024-08-26T17:15:41.750+0900] {processor.py:161} INFO - Started process (PID=83760) to work on /home/kyuseok00/teamproj/airflow/dags/audit.py
+[2024-08-26T17:15:41.751+0900] {processor.py:830} INFO - Processing file /home/kyuseok00/teamproj/airflow/dags/audit.py for tasks to queue
+[2024-08-26T17:15:41.753+0900] {logging_mixin.py:188} INFO - [2024-08-26T17:15:41.753+0900] {dagbag.py:545} INFO - Filling up the DagBag from /home/kyuseok00/teamproj/airflow/dags/audit.py
+[2024-08-26T17:15:41.807+0900] {processor.py:840} INFO - DAG(s) 'data_for_audit' retrieved from /home/kyuseok00/teamproj/airflow/dags/audit.py
+[2024-08-26T17:15:41.818+0900] {logging_mixin.py:188} INFO - [2024-08-26T17:15:41.818+0900] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-08-26T17:15:41.838+0900] {logging_mixin.py:188} INFO - [2024-08-26T17:15:41.837+0900] {dag.py:3947} INFO - Setting next_dagrun for data_for_audit to 2024-08-26 07:00:00+00:00, run_after=2024-08-26 08:00:00+00:00
+[2024-08-26T17:15:41.864+0900] {processor.py:183} INFO - Processing /home/kyuseok00/teamproj/airflow/dags/audit.py took 0.122 seconds

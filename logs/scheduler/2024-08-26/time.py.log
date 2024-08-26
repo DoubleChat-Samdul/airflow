@@ -86,3 +86,10 @@ SyntaxError: invalid syntax
 [2024-08-26T17:14:02.171+0900] {logging_mixin.py:188} INFO - [2024-08-26T17:14:02.171+0900] {dag.py:3089} INFO - Sync 1 DAGs
 [2024-08-26T17:14:02.201+0900] {logging_mixin.py:188} INFO - [2024-08-26T17:14:02.200+0900] {dag.py:3947} INFO - Setting next_dagrun for send_reminder to 2024-08-24 09:30:00+00:00, run_after=2024-08-25 09:30:00+00:00
 [2024-08-26T17:14:02.227+0900] {processor.py:183} INFO - Processing /home/kyuseok00/teamproj/airflow/dags/time.py took 0.135 seconds
+[2024-08-26T17:15:43.025+0900] {processor.py:161} INFO - Started process (PID=83762) to work on /home/kyuseok00/teamproj/airflow/dags/time.py
+[2024-08-26T17:15:43.033+0900] {processor.py:830} INFO - Processing file /home/kyuseok00/teamproj/airflow/dags/time.py for tasks to queue
+[2024-08-26T17:15:43.035+0900] {logging_mixin.py:188} INFO - [2024-08-26T17:15:43.034+0900] {dagbag.py:545} INFO - Filling up the DagBag from /home/kyuseok00/teamproj/airflow/dags/time.py
+[2024-08-26T17:15:43.085+0900] {processor.py:840} INFO - DAG(s) 'send_reminder' retrieved from /home/kyuseok00/teamproj/airflow/dags/time.py
+[2024-08-26T17:15:43.092+0900] {logging_mixin.py:188} INFO - [2024-08-26T17:15:43.091+0900] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-08-26T17:15:43.123+0900] {logging_mixin.py:188} INFO - [2024-08-26T17:15:43.122+0900] {dag.py:3947} INFO - Setting next_dagrun for send_reminder to 2024-08-24 09:30:00+00:00, run_after=2024-08-25 09:30:00+00:00
+[2024-08-26T17:15:43.150+0900] {processor.py:183} INFO - Processing /home/kyuseok00/teamproj/airflow/dags/time.py took 0.130 seconds
