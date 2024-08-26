@@ -1,0 +1,88 @@
+[2024-08-26T17:11:32.987+0900] {processor.py:161} INFO - Started process (PID=81923) to work on /home/kyuseok00/teamproj/airflow/dags/time.py
+[2024-08-26T17:11:32.988+0900] {processor.py:830} INFO - Processing file /home/kyuseok00/teamproj/airflow/dags/time.py for tasks to queue
+[2024-08-26T17:11:32.991+0900] {logging_mixin.py:188} INFO - [2024-08-26T17:11:32.990+0900] {dagbag.py:545} INFO - Filling up the DagBag from /home/kyuseok00/teamproj/airflow/dags/time.py
+[2024-08-26T17:11:32.994+0900] {logging_mixin.py:188} INFO - [2024-08-26T17:11:32.993+0900] {dagbag.py:355} ERROR - Failed to import: /home/kyuseok00/teamproj/airflow/dags/time.py
+Traceback (most recent call last):
+  File "/home/kyuseok00/.pyenv/versions/3.11.9/envs/air/lib/python3.11/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/kyuseok00/teamproj/airflow/dags/time.py", line 5, in <module>
+    from kafka import KafkaProducer
+ModuleNotFoundError: No module named 'kafka'
+[2024-08-26T17:11:32.995+0900] {processor.py:842} WARNING - No viable dags retrieved from /home/kyuseok00/teamproj/airflow/dags/time.py
+[2024-08-26T17:11:33.018+0900] {processor.py:183} INFO - Processing /home/kyuseok00/teamproj/airflow/dags/time.py took 0.036 seconds
+[2024-08-26T17:12:03.601+0900] {processor.py:161} INFO - Started process (PID=81935) to work on /home/kyuseok00/teamproj/airflow/dags/time.py
+[2024-08-26T17:12:03.604+0900] {processor.py:830} INFO - Processing file /home/kyuseok00/teamproj/airflow/dags/time.py for tasks to queue
+[2024-08-26T17:12:03.605+0900] {logging_mixin.py:188} INFO - [2024-08-26T17:12:03.605+0900] {dagbag.py:545} INFO - Filling up the DagBag from /home/kyuseok00/teamproj/airflow/dags/time.py
+[2024-08-26T17:12:03.608+0900] {logging_mixin.py:188} INFO - [2024-08-26T17:12:03.607+0900] {dagbag.py:355} ERROR - Failed to import: /home/kyuseok00/teamproj/airflow/dags/time.py
+Traceback (most recent call last):
+  File "/home/kyuseok00/.pyenv/versions/3.11.9/envs/air/lib/python3.11/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/kyuseok00/teamproj/airflow/dags/time.py", line 5, in <module>
+    from kafka import KafkaProducer
+ModuleNotFoundError: No module named 'kafka'
+[2024-08-26T17:12:03.609+0900] {processor.py:842} WARNING - No viable dags retrieved from /home/kyuseok00/teamproj/airflow/dags/time.py
+[2024-08-26T17:12:03.629+0900] {processor.py:183} INFO - Processing /home/kyuseok00/teamproj/airflow/dags/time.py took 0.033 seconds
+[2024-08-26T17:12:34.170+0900] {processor.py:161} INFO - Started process (PID=82300) to work on /home/kyuseok00/teamproj/airflow/dags/time.py
+[2024-08-26T17:12:34.173+0900] {processor.py:830} INFO - Processing file /home/kyuseok00/teamproj/airflow/dags/time.py for tasks to queue
+[2024-08-26T17:12:34.175+0900] {logging_mixin.py:188} INFO - [2024-08-26T17:12:34.175+0900] {dagbag.py:545} INFO - Filling up the DagBag from /home/kyuseok00/teamproj/airflow/dags/time.py
+[2024-08-26T17:12:34.216+0900] {logging_mixin.py:188} INFO - [2024-08-26T17:12:34.215+0900] {dagbag.py:355} ERROR - Failed to import: /home/kyuseok00/teamproj/airflow/dags/time.py
+Traceback (most recent call last):
+  File "/home/kyuseok00/.pyenv/versions/3.11.9/envs/air/lib/python3.11/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/kyuseok00/teamproj/airflow/dags/time.py", line 5, in <module>
+    from kafka import KafkaProducer
+  File "/home/kyuseok00/.pyenv/versions/3.11.9/envs/air/lib/python3.11/site-packages/kafka/__init__.py", line 23, in <module>
+    from kafka.producer import KafkaProducer
+  File "/home/kyuseok00/.pyenv/versions/3.11.9/envs/air/lib/python3.11/site-packages/kafka/producer/__init__.py", line 4, in <module>
+    from .simple import SimpleProducer
+  File "/home/kyuseok00/.pyenv/versions/3.11.9/envs/air/lib/python3.11/site-packages/kafka/producer/simple.py", line 54
+    return '<SimpleProducer batch=%s>' % self.async
+                                              ^^^^^
+SyntaxError: invalid syntax
+[2024-08-26T17:12:34.217+0900] {processor.py:842} WARNING - No viable dags retrieved from /home/kyuseok00/teamproj/airflow/dags/time.py
+[2024-08-26T17:12:34.238+0900] {processor.py:183} INFO - Processing /home/kyuseok00/teamproj/airflow/dags/time.py took 0.088 seconds
+[2024-08-26T17:13:04.427+0900] {processor.py:161} INFO - Started process (PID=82304) to work on /home/kyuseok00/teamproj/airflow/dags/time.py
+[2024-08-26T17:13:04.429+0900] {processor.py:830} INFO - Processing file /home/kyuseok00/teamproj/airflow/dags/time.py for tasks to queue
+[2024-08-26T17:13:04.431+0900] {logging_mixin.py:188} INFO - [2024-08-26T17:13:04.430+0900] {dagbag.py:545} INFO - Filling up the DagBag from /home/kyuseok00/teamproj/airflow/dags/time.py
+[2024-08-26T17:13:04.462+0900] {logging_mixin.py:188} INFO - [2024-08-26T17:13:04.461+0900] {dagbag.py:355} ERROR - Failed to import: /home/kyuseok00/teamproj/airflow/dags/time.py
+Traceback (most recent call last):
+  File "/home/kyuseok00/.pyenv/versions/3.11.9/envs/air/lib/python3.11/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/kyuseok00/teamproj/airflow/dags/time.py", line 5, in <module>
+    from kafka import KafkaProducer
+  File "/home/kyuseok00/.pyenv/versions/3.11.9/envs/air/lib/python3.11/site-packages/kafka/__init__.py", line 23, in <module>
+    from kafka.producer import KafkaProducer
+  File "/home/kyuseok00/.pyenv/versions/3.11.9/envs/air/lib/python3.11/site-packages/kafka/producer/__init__.py", line 4, in <module>
+    from .simple import SimpleProducer
+  File "/home/kyuseok00/.pyenv/versions/3.11.9/envs/air/lib/python3.11/site-packages/kafka/producer/simple.py", line 54
+    return '<SimpleProducer batch=%s>' % self.async
+                                              ^^^^^
+SyntaxError: invalid syntax
+[2024-08-26T17:13:04.462+0900] {processor.py:842} WARNING - No viable dags retrieved from /home/kyuseok00/teamproj/airflow/dags/time.py
+[2024-08-26T17:13:04.484+0900] {processor.py:183} INFO - Processing /home/kyuseok00/teamproj/airflow/dags/time.py took 0.066 seconds
+[2024-08-26T17:13:34.956+0900] {processor.py:161} INFO - Started process (PID=82575) to work on /home/kyuseok00/teamproj/airflow/dags/time.py
+[2024-08-26T17:13:34.959+0900] {processor.py:830} INFO - Processing file /home/kyuseok00/teamproj/airflow/dags/time.py for tasks to queue
+[2024-08-26T17:13:34.961+0900] {logging_mixin.py:188} INFO - [2024-08-26T17:13:34.960+0900] {dagbag.py:545} INFO - Filling up the DagBag from /home/kyuseok00/teamproj/airflow/dags/time.py
+[2024-08-26T17:13:35.007+0900] {processor.py:840} INFO - DAG(s) 'send_reminder' retrieved from /home/kyuseok00/teamproj/airflow/dags/time.py
+[2024-08-26T17:13:35.118+0900] {logging_mixin.py:188} INFO - [2024-08-26T17:13:35.117+0900] {override.py:1858} INFO - Created Permission View: can read on DAG:send_reminder
+[2024-08-26T17:13:35.129+0900] {logging_mixin.py:188} INFO - [2024-08-26T17:13:35.129+0900] {override.py:1858} INFO - Created Permission View: can edit on DAG:send_reminder
+[2024-08-26T17:13:35.141+0900] {logging_mixin.py:188} INFO - [2024-08-26T17:13:35.140+0900] {override.py:1858} INFO - Created Permission View: can delete on DAG:send_reminder
+[2024-08-26T17:13:35.141+0900] {logging_mixin.py:188} INFO - [2024-08-26T17:13:35.141+0900] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-08-26T17:13:35.153+0900] {logging_mixin.py:188} INFO - [2024-08-26T17:13:35.152+0900] {dag.py:3111} INFO - Creating ORM DAG for send_reminder
+[2024-08-26T17:13:35.165+0900] {logging_mixin.py:188} INFO - [2024-08-26T17:13:35.165+0900] {dag.py:3947} INFO - Setting next_dagrun for send_reminder to 2024-08-24 09:30:00+00:00, run_after=2024-08-25 09:30:00+00:00
+[2024-08-26T17:13:35.193+0900] {processor.py:183} INFO - Processing /home/kyuseok00/teamproj/airflow/dags/time.py took 0.245 seconds
+[2024-08-26T17:14:02.098+0900] {processor.py:161} INFO - Started process (PID=82994) to work on /home/kyuseok00/teamproj/airflow/dags/time.py
+[2024-08-26T17:14:02.099+0900] {processor.py:830} INFO - Processing file /home/kyuseok00/teamproj/airflow/dags/time.py for tasks to queue
+[2024-08-26T17:14:02.101+0900] {logging_mixin.py:188} INFO - [2024-08-26T17:14:02.100+0900] {dagbag.py:545} INFO - Filling up the DagBag from /home/kyuseok00/teamproj/airflow/dags/time.py
+[2024-08-26T17:14:02.164+0900] {processor.py:840} INFO - DAG(s) 'send_reminder' retrieved from /home/kyuseok00/teamproj/airflow/dags/time.py
+[2024-08-26T17:14:02.171+0900] {logging_mixin.py:188} INFO - [2024-08-26T17:14:02.171+0900] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-08-26T17:14:02.201+0900] {logging_mixin.py:188} INFO - [2024-08-26T17:14:02.200+0900] {dag.py:3947} INFO - Setting next_dagrun for send_reminder to 2024-08-24 09:30:00+00:00, run_after=2024-08-25 09:30:00+00:00
+[2024-08-26T17:14:02.227+0900] {processor.py:183} INFO - Processing /home/kyuseok00/teamproj/airflow/dags/time.py took 0.135 seconds

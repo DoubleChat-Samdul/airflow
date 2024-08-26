@@ -1,0 +1,66 @@
+[2024-08-26T17:11:31.712+0900] {manager.py:470} INFO - Processing files using up to 1 processes at a time 
+[2024-08-26T17:11:31.712+0900] {manager.py:471} INFO - Process each file at most once every 30 seconds
+[2024-08-26T17:11:31.713+0900] {manager.py:472} INFO - Checking for new files in /home/kyuseok00/teamproj/airflow/dags every 300 seconds
+[2024-08-26T17:11:31.713+0900] {manager.py:737} INFO - Searching for files in /home/kyuseok00/teamproj/airflow/dags
+[2024-08-26T17:11:31.717+0900] {manager.py:740} INFO - There are 2 files in /home/kyuseok00/teamproj/airflow/dags
+[2024-08-26T17:11:31.888+0900] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                       PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/kyuseok00/teamproj/airflow/dags/audit.py                           0           1  0.10s           2024-08-26T08:11:31
+/home/kyuseok00/teamproj/airflow/dags/time.py                            0           0
+================================================================================
+[2024-08-26T17:12:02.527+0900] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                       PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/kyuseok00/teamproj/airflow/dags/time.py                            0           1  0.10s           2024-08-26T08:11:33
+/home/kyuseok00/teamproj/airflow/dags/audit.py                           0           1  0.10s           2024-08-26T08:12:02
+================================================================================
+[2024-08-26T17:12:33.057+0900] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                       PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/kyuseok00/teamproj/airflow/dags/audit.py                           0           1  0.21s           2024-08-26T08:12:33
+/home/kyuseok00/teamproj/airflow/dags/time.py                            0           1  0.10s           2024-08-26T08:12:03
+================================================================================
+[2024-08-26T17:13:03.190+0900] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                       PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/kyuseok00/teamproj/airflow/dags/time.py                            0           1  0.11s           2024-08-26T08:12:34
+/home/kyuseok00/teamproj/airflow/dags/audit.py                           0           1  0.10s           2024-08-26T08:13:03
+================================================================================
+[2024-08-26T17:13:33.905+0900] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                       PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/kyuseok00/teamproj/airflow/dags/audit.py                           0           1  0.10s           2024-08-26T08:13:33
+/home/kyuseok00/teamproj/airflow/dags/time.py                            0           1  0.10s           2024-08-26T08:13:04
+================================================================================
+[2024-08-26T17:13:53.700+0900] {manager.py:452} INFO - Exiting gracefully upon receiving signal 15
+[2024-08-26T17:14:00.872+0900] {manager.py:470} INFO - Processing files using up to 1 processes at a time 
+[2024-08-26T17:14:00.872+0900] {manager.py:471} INFO - Process each file at most once every 30 seconds
+[2024-08-26T17:14:00.873+0900] {manager.py:472} INFO - Checking for new files in /home/kyuseok00/teamproj/airflow/dags every 300 seconds
+[2024-08-26T17:14:00.873+0900] {manager.py:737} INFO - Searching for files in /home/kyuseok00/teamproj/airflow/dags
+[2024-08-26T17:14:00.875+0900] {manager.py:740} INFO - There are 2 files in /home/kyuseok00/teamproj/airflow/dags
+[2024-08-26T17:14:01.032+0900] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                       PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/kyuseok00/teamproj/airflow/dags/audit.py                           0           1  0.10s           2024-08-26T08:14:01
+/home/kyuseok00/teamproj/airflow/dags/time.py                            0           0
+================================================================================
+[2024-08-26T17:14:11.544+0900] {manager.py:452} INFO - Exiting gracefully upon receiving signal 15

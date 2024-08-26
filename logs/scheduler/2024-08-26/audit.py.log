@@ -1,0 +1,108 @@
+[2024-08-26T17:11:31.798+0900] {processor.py:161} INFO - Started process (PID=81922) to work on /home/kyuseok00/teamproj/airflow/dags/audit.py
+[2024-08-26T17:11:31.799+0900] {processor.py:830} INFO - Processing file /home/kyuseok00/teamproj/airflow/dags/audit.py for tasks to queue
+[2024-08-26T17:11:31.801+0900] {logging_mixin.py:188} INFO - [2024-08-26T17:11:31.801+0900] {dagbag.py:545} INFO - Filling up the DagBag from /home/kyuseok00/teamproj/airflow/dags/audit.py
+[2024-08-26T17:11:31.808+0900] {logging_mixin.py:188} INFO - [2024-08-26T17:11:31.805+0900] {dagbag.py:355} ERROR - Failed to import: /home/kyuseok00/teamproj/airflow/dags/audit.py
+Traceback (most recent call last):
+  File "/home/kyuseok00/.pyenv/versions/3.11.9/envs/air/lib/python3.11/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/kyuseok00/teamproj/airflow/dags/audit.py", line 6, in <module>
+    from kafka import KafkaProducer
+ModuleNotFoundError: No module named 'kafka'
+[2024-08-26T17:11:31.809+0900] {processor.py:842} WARNING - No viable dags retrieved from /home/kyuseok00/teamproj/airflow/dags/audit.py
+[2024-08-26T17:11:31.834+0900] {processor.py:183} INFO - Processing /home/kyuseok00/teamproj/airflow/dags/audit.py took 0.045 seconds
+[2024-08-26T17:12:02.433+0900] {processor.py:161} INFO - Started process (PID=81934) to work on /home/kyuseok00/teamproj/airflow/dags/audit.py
+[2024-08-26T17:12:02.434+0900] {processor.py:830} INFO - Processing file /home/kyuseok00/teamproj/airflow/dags/audit.py for tasks to queue
+[2024-08-26T17:12:02.436+0900] {logging_mixin.py:188} INFO - [2024-08-26T17:12:02.436+0900] {dagbag.py:545} INFO - Filling up the DagBag from /home/kyuseok00/teamproj/airflow/dags/audit.py
+[2024-08-26T17:12:02.439+0900] {logging_mixin.py:188} INFO - [2024-08-26T17:12:02.438+0900] {dagbag.py:355} ERROR - Failed to import: /home/kyuseok00/teamproj/airflow/dags/audit.py
+Traceback (most recent call last):
+  File "/home/kyuseok00/.pyenv/versions/3.11.9/envs/air/lib/python3.11/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/kyuseok00/teamproj/airflow/dags/audit.py", line 6, in <module>
+    from kafka import KafkaProducer
+ModuleNotFoundError: No module named 'kafka'
+[2024-08-26T17:12:02.440+0900] {processor.py:842} WARNING - No viable dags retrieved from /home/kyuseok00/teamproj/airflow/dags/audit.py
+[2024-08-26T17:12:02.463+0900] {processor.py:183} INFO - Processing /home/kyuseok00/teamproj/airflow/dags/audit.py took 0.037 seconds
+[2024-08-26T17:12:32.879+0900] {processor.py:161} INFO - Started process (PID=82299) to work on /home/kyuseok00/teamproj/airflow/dags/audit.py
+[2024-08-26T17:12:32.888+0900] {processor.py:830} INFO - Processing file /home/kyuseok00/teamproj/airflow/dags/audit.py for tasks to queue
+[2024-08-26T17:12:32.891+0900] {logging_mixin.py:188} INFO - [2024-08-26T17:12:32.890+0900] {dagbag.py:545} INFO - Filling up the DagBag from /home/kyuseok00/teamproj/airflow/dags/audit.py
+[2024-08-26T17:12:32.936+0900] {logging_mixin.py:188} INFO - [2024-08-26T17:12:32.934+0900] {dagbag.py:355} ERROR - Failed to import: /home/kyuseok00/teamproj/airflow/dags/audit.py
+Traceback (most recent call last):
+  File "/home/kyuseok00/.pyenv/versions/3.11.9/envs/air/lib/python3.11/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/kyuseok00/teamproj/airflow/dags/audit.py", line 6, in <module>
+    from kafka import KafkaProducer
+  File "/home/kyuseok00/.pyenv/versions/3.11.9/envs/air/lib/python3.11/site-packages/kafka/__init__.py", line 23, in <module>
+    from kafka.producer import KafkaProducer
+  File "/home/kyuseok00/.pyenv/versions/3.11.9/envs/air/lib/python3.11/site-packages/kafka/producer/__init__.py", line 4, in <module>
+    from .simple import SimpleProducer
+  File "/home/kyuseok00/.pyenv/versions/3.11.9/envs/air/lib/python3.11/site-packages/kafka/producer/simple.py", line 54
+    return '<SimpleProducer batch=%s>' % self.async
+                                              ^^^^^
+SyntaxError: invalid syntax
+[2024-08-26T17:12:32.936+0900] {processor.py:842} WARNING - No viable dags retrieved from /home/kyuseok00/teamproj/airflow/dags/audit.py
+[2024-08-26T17:12:32.957+0900] {processor.py:183} INFO - Processing /home/kyuseok00/teamproj/airflow/dags/audit.py took 0.097 seconds
+[2024-08-26T17:13:03.102+0900] {processor.py:161} INFO - Started process (PID=82303) to work on /home/kyuseok00/teamproj/airflow/dags/audit.py
+[2024-08-26T17:13:03.103+0900] {processor.py:830} INFO - Processing file /home/kyuseok00/teamproj/airflow/dags/audit.py for tasks to queue
+[2024-08-26T17:13:03.104+0900] {logging_mixin.py:188} INFO - [2024-08-26T17:13:03.104+0900] {dagbag.py:545} INFO - Filling up the DagBag from /home/kyuseok00/teamproj/airflow/dags/audit.py
+[2024-08-26T17:13:03.136+0900] {logging_mixin.py:188} INFO - [2024-08-26T17:13:03.135+0900] {dagbag.py:355} ERROR - Failed to import: /home/kyuseok00/teamproj/airflow/dags/audit.py
+Traceback (most recent call last):
+  File "/home/kyuseok00/.pyenv/versions/3.11.9/envs/air/lib/python3.11/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/kyuseok00/teamproj/airflow/dags/audit.py", line 6, in <module>
+    from kafka import KafkaProducer
+  File "/home/kyuseok00/.pyenv/versions/3.11.9/envs/air/lib/python3.11/site-packages/kafka/__init__.py", line 23, in <module>
+    from kafka.producer import KafkaProducer
+  File "/home/kyuseok00/.pyenv/versions/3.11.9/envs/air/lib/python3.11/site-packages/kafka/producer/__init__.py", line 4, in <module>
+    from .simple import SimpleProducer
+  File "/home/kyuseok00/.pyenv/versions/3.11.9/envs/air/lib/python3.11/site-packages/kafka/producer/simple.py", line 54
+    return '<SimpleProducer batch=%s>' % self.async
+                                              ^^^^^
+SyntaxError: invalid syntax
+[2024-08-26T17:13:03.137+0900] {processor.py:842} WARNING - No viable dags retrieved from /home/kyuseok00/teamproj/airflow/dags/audit.py
+[2024-08-26T17:13:03.160+0900] {processor.py:183} INFO - Processing /home/kyuseok00/teamproj/airflow/dags/audit.py took 0.066 seconds
+[2024-08-26T17:13:33.816+0900] {processor.py:161} INFO - Started process (PID=82574) to work on /home/kyuseok00/teamproj/airflow/dags/audit.py
+[2024-08-26T17:13:33.819+0900] {processor.py:830} INFO - Processing file /home/kyuseok00/teamproj/airflow/dags/audit.py for tasks to queue
+[2024-08-26T17:13:33.821+0900] {logging_mixin.py:188} INFO - [2024-08-26T17:13:33.821+0900] {dagbag.py:545} INFO - Filling up the DagBag from /home/kyuseok00/teamproj/airflow/dags/audit.py
+[2024-08-26T17:13:33.870+0900] {logging_mixin.py:188} INFO - [2024-08-26T17:13:33.867+0900] {dagbag.py:355} ERROR - Failed to import: /home/kyuseok00/teamproj/airflow/dags/audit.py
+Traceback (most recent call last):
+  File "/home/kyuseok00/.pyenv/versions/3.11.9/envs/air/lib/python3.11/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/kyuseok00/teamproj/airflow/dags/audit.py", line 17, in <module>
+    dag = DAG(
+          ^^^^
+  File "/home/kyuseok00/.pyenv/versions/3.11.9/envs/air/lib/python3.11/site-packages/airflow/models/dag.py", line 519, in __init__
+    validate_key(dag_id)
+  File "/home/kyuseok00/.pyenv/versions/3.11.9/envs/air/lib/python3.11/site-packages/airflow/utils/helpers.py", line 57, in validate_key
+    raise AirflowException(
+airflow.exceptions.AirflowException: The key 'data for audit' has to be made of alphanumeric characters, dashes, dots and underscores exclusively
+[2024-08-26T17:13:33.871+0900] {processor.py:842} WARNING - No viable dags retrieved from /home/kyuseok00/teamproj/airflow/dags/audit.py
+[2024-08-26T17:13:33.895+0900] {processor.py:183} INFO - Processing /home/kyuseok00/teamproj/airflow/dags/audit.py took 0.088 seconds
+[2024-08-26T17:14:00.937+0900] {processor.py:161} INFO - Started process (PID=82992) to work on /home/kyuseok00/teamproj/airflow/dags/audit.py
+[2024-08-26T17:14:00.939+0900] {processor.py:830} INFO - Processing file /home/kyuseok00/teamproj/airflow/dags/audit.py for tasks to queue
+[2024-08-26T17:14:00.942+0900] {logging_mixin.py:188} INFO - [2024-08-26T17:14:00.941+0900] {dagbag.py:545} INFO - Filling up the DagBag from /home/kyuseok00/teamproj/airflow/dags/audit.py
+[2024-08-26T17:14:00.982+0900] {logging_mixin.py:188} INFO - [2024-08-26T17:14:00.981+0900] {dagbag.py:355} ERROR - Failed to import: /home/kyuseok00/teamproj/airflow/dags/audit.py
+Traceback (most recent call last):
+  File "/home/kyuseok00/.pyenv/versions/3.11.9/envs/air/lib/python3.11/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/kyuseok00/teamproj/airflow/dags/audit.py", line 17, in <module>
+    dag = DAG(
+          ^^^^
+  File "/home/kyuseok00/.pyenv/versions/3.11.9/envs/air/lib/python3.11/site-packages/airflow/models/dag.py", line 519, in __init__
+    validate_key(dag_id)
+  File "/home/kyuseok00/.pyenv/versions/3.11.9/envs/air/lib/python3.11/site-packages/airflow/utils/helpers.py", line 57, in validate_key
+    raise AirflowException(
+airflow.exceptions.AirflowException: The key 'data for audit' has to be made of alphanumeric characters, dashes, dots and underscores exclusively
+[2024-08-26T17:14:00.983+0900] {processor.py:842} WARNING - No viable dags retrieved from /home/kyuseok00/teamproj/airflow/dags/audit.py
+[2024-08-26T17:14:01.000+0900] {processor.py:183} INFO - Processing /home/kyuseok00/teamproj/airflow/dags/audit.py took 0.068 seconds

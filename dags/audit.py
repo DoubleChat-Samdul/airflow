@@ -15,7 +15,7 @@ default_args = {
 }
 
 dag = DAG(
-    'data for audit',
+    'data_for_audit',
     default_args=default_args,
     description='Sends a reminder message to the chatroom at 9:30 AM',
     schedule_interval='@hourly',
