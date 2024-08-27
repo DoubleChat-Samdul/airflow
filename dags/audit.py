@@ -5,6 +5,7 @@ from airflow.operators.bash import BashOperator
 from datetime import datetime, timedelta
 from kafka import KafkaProducer
 from json import dumps
+import os
 
 default_args = {
     'owner': 'airflow',
@@ -18,9 +19,15 @@ dag = DAG(
     'data_for_audit',
     default_args=default_args,
     description='fetch data from kafka hourly for audit',
-    schedule_interval='@hourly',
+    schedule='@hourly',
     catchup=False,
 )
+'''
+home_dir = os.path.expanduser("~")
+audit_path = os.path.join(home_dir,'teamproj/data/messages_audit')
+audit_module = os.path.join(home_dir,'teamproj/chat/src/audit/audit.py')
+offset_path = os.path.join(home_dir,'teamproj')
+'''
 
 start_task = EmptyOperator(
     task_id='start',
@@ -31,13 +38,30 @@ end_task = EmptyOperator(
     task_id='end',
     dag=dag,
 )
+'''
+fetch_task = BashOperator(
+    task_id='fetch_data',
+    bash_command=f"""
+        export AUDIT_PATH={audit_path}
+        export AUDIT_MODULE={audit_module}
+        export OFFSET_PATH={offset_path}
+        $SPARK_HOME/bin/spark-submit {audit_module}
+    """
+)
+'''
 
 fetch_task = BashOperator(
     task_id='fetch_data',
     bash_command="""
-        $SPARK_HOME/bin/spark-submit /home/kyuseok00/teamproj/chat/py/audit.py
+        export AUDIT_PATH=$AUDIT_PATH
+        export OFFSET_PATH=$OFFSET_PATH
+        export AUDIT_MODULE=$AUDIT_MODULE
+        echo $AUDIT_MODULE
+        echo $OFFSET_PATH
+        echo $AUDIT_MODULE
+        echo $SPARK_HOME
+        $SPARK_HOME/bin/spark-submit $AUDIT_MODULE
     """
 )
 
 start_task >> fetch_task >> end_task
-
