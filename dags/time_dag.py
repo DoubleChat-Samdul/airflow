@@ -11,14 +11,14 @@ def send_kafka_message():
         value_serializer=lambda x: dumps(x).encode('utf-8')
     )
     
-    message = {'sender': '[SYSTEM]', 'message': '미팅시간 5분전 입니다', 'end': False}
+    message = {'sender': '[NOTICE]', 'message': '미팅시간 5분 전입니다', 'end': False}
     producer.send('chatroom', value=message)
     producer.flush()
 
 default_args = {
     'owner': 'airflow',
     'depends_on_past': False,
-    'start_date': datetime(2024, 8, 24),
+    'start_date': datetime(2024, 8, 25),
     'retries': 1,
     'retry_delay': timedelta(minutes=5),
 }
