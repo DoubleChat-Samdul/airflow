@@ -4127,3 +4127,10 @@ NameError: name 'os' is not defined
 [2024-08-27T16:37:13.491+0900] {logging_mixin.py:188} INFO - [2024-08-27T16:37:13.491+0900] {dag.py:3089} INFO - Sync 1 DAGs
 [2024-08-27T16:37:13.510+0900] {logging_mixin.py:188} INFO - [2024-08-27T16:37:13.510+0900] {dag.py:3947} INFO - Setting next_dagrun for data_for_audit to 2024-08-27 07:00:00+00:00, run_after=2024-08-27 08:00:00+00:00
 [2024-08-27T16:37:13.537+0900] {processor.py:183} INFO - Processing /home/kyuseok00/teamproj/airflow/dags/audit.py took 0.192 seconds
+[2024-08-27T16:37:43.656+0900] {processor.py:161} INFO - Started process (PID=96266) to work on /home/kyuseok00/teamproj/airflow/dags/audit.py
+[2024-08-27T16:37:43.665+0900] {processor.py:830} INFO - Processing file /home/kyuseok00/teamproj/airflow/dags/audit.py for tasks to queue
+[2024-08-27T16:37:43.667+0900] {logging_mixin.py:188} INFO - [2024-08-27T16:37:43.666+0900] {dagbag.py:545} INFO - Filling up the DagBag from /home/kyuseok00/teamproj/airflow/dags/audit.py
+[2024-08-27T16:37:43.717+0900] {processor.py:840} INFO - DAG(s) 'data_for_audit' retrieved from /home/kyuseok00/teamproj/airflow/dags/audit.py
+[2024-08-27T16:37:43.737+0900] {logging_mixin.py:188} INFO - [2024-08-27T16:37:43.737+0900] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-08-27T16:37:43.756+0900] {logging_mixin.py:188} INFO - [2024-08-27T16:37:43.756+0900] {dag.py:3947} INFO - Setting next_dagrun for data_for_audit to 2024-08-27 07:00:00+00:00, run_after=2024-08-27 08:00:00+00:00
+[2024-08-27T16:37:43.777+0900] {processor.py:183} INFO - Processing /home/kyuseok00/teamproj/airflow/dags/audit.py took 0.127 seconds
