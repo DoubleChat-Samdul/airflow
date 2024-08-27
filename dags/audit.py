@@ -38,17 +38,6 @@ end_task = EmptyOperator(
     task_id='end',
     dag=dag,
 )
-'''
-fetch_task = BashOperator(
-    task_id='fetch_data',
-    bash_command=f"""
-        export AUDIT_PATH={audit_path}
-        export AUDIT_MODULE={audit_module}
-        export OFFSET_PATH={offset_path}
-        $SPARK_HOME/bin/spark-submit {audit_module}
-    """
-)
-'''
 
 fetch_task = BashOperator(
     task_id='fetch_data',
@@ -56,10 +45,6 @@ fetch_task = BashOperator(
         export AUDIT_PATH=$AUDIT_PATH
         export OFFSET_PATH=$OFFSET_PATH
         export AUDIT_MODULE=$AUDIT_MODULE
-        echo $AUDIT_MODULE
-        echo $OFFSET_PATH
-        echo $AUDIT_MODULE
-        echo $SPARK_HOME
         $SPARK_HOME/bin/spark-submit $AUDIT_MODULE
     """
 )
