@@ -1,0 +1,73 @@
+[2024-08-27T11:00:03.437+0900] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-08-27T11:00:03.452+0900] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: data_for_audit.fetch_data scheduled__2024-08-27T01:00:00+00:00 [queued]>
+[2024-08-27T11:00:03.457+0900] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: data_for_audit.fetch_data scheduled__2024-08-27T01:00:00+00:00 [queued]>
+[2024-08-27T11:00:03.457+0900] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2024-08-27T11:00:03.472+0900] {taskinstance.py:2330} INFO - Executing <Task(BashOperator): fetch_data> on 2024-08-27 01:00:00+00:00
+[2024-08-27T11:00:03.474+0900] {standard_task_runner.py:64} INFO - Started process 21089 to run task
+[2024-08-27T11:00:03.476+0900] {standard_task_runner.py:90} INFO - Running: ['airflow', 'tasks', 'run', 'data_for_audit', 'fetch_data', 'scheduled__2024-08-27T01:00:00+00:00', '--job-id', '13', '--raw', '--subdir', 'DAGS_FOLDER/audit.py', '--cfg-path', '/tmp/tmp6ra9zkz8']
+[2024-08-27T11:00:03.478+0900] {standard_task_runner.py:91} INFO - Job 13: Subtask fetch_data
+[2024-08-27T11:00:03.515+0900] {task_command.py:426} INFO - Running <TaskInstance: data_for_audit.fetch_data scheduled__2024-08-27T01:00:00+00:00 [running]> on host KYUSEOK-NB.
+[2024-08-27T11:00:03.585+0900] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='data_for_audit' AIRFLOW_CTX_TASK_ID='fetch_data' AIRFLOW_CTX_EXECUTION_DATE='2024-08-27T01:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-08-27T01:00:00+00:00'
+[2024-08-27T11:00:03.586+0900] {taskinstance.py:430} INFO - ::endgroup::
+[2024-08-27T11:00:03.596+0900] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2024-08-27T11:00:03.596+0900] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', '\n        $SPARK_HOME/bin/spark-submit /home/kyuseok00/teamproj/chat/py/audit.py\n    ']
+[2024-08-27T11:00:03.602+0900] {subprocess.py:86} INFO - Output:
+[2024-08-27T11:00:05.024+0900] {subprocess.py:93} INFO - 24/08/27 11:00:05 WARN Utils: Your hostname, KYUSEOK-NB resolves to a loopback address: 127.0.1.1; using 10.255.255.254 instead (on interface lo)
+[2024-08-27T11:00:05.027+0900] {subprocess.py:93} INFO - 24/08/27 11:00:05 WARN Utils: Set SPARK_LOCAL_IP if you need to bind to another address
+[2024-08-27T11:00:06.230+0900] {subprocess.py:93} INFO - 24/08/27 11:00:06 INFO SparkContext: Running Spark version 3.5.1
+[2024-08-27T11:00:06.230+0900] {subprocess.py:93} INFO - 24/08/27 11:00:06 INFO SparkContext: OS info Linux, 5.15.153.1-microsoft-standard-WSL2, amd64
+[2024-08-27T11:00:06.231+0900] {subprocess.py:93} INFO - 24/08/27 11:00:06 INFO SparkContext: Java version 17.0.12
+[2024-08-27T11:00:06.299+0900] {subprocess.py:93} INFO - 24/08/27 11:00:06 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+[2024-08-27T11:00:06.396+0900] {subprocess.py:93} INFO - 24/08/27 11:00:06 INFO ResourceUtils: ==============================================================
+[2024-08-27T11:00:06.396+0900] {subprocess.py:93} INFO - 24/08/27 11:00:06 INFO ResourceUtils: No custom resources configured for spark.driver.
+[2024-08-27T11:00:06.397+0900] {subprocess.py:93} INFO - 24/08/27 11:00:06 INFO ResourceUtils: ==============================================================
+[2024-08-27T11:00:06.397+0900] {subprocess.py:93} INFO - 24/08/27 11:00:06 INFO SparkContext: Submitted application: KafkaAudit
+[2024-08-27T11:00:06.417+0900] {subprocess.py:93} INFO - 24/08/27 11:00:06 INFO ResourceProfile: Default ResourceProfile created, executor resources: Map(cores -> name: cores, amount: 1, script: , vendor: , memory -> name: memory, amount: 1024, script: , vendor: , offHeap -> name: offHeap, amount: 0, script: , vendor: ), task resources: Map(cpus -> name: cpus, amount: 1.0)
+[2024-08-27T11:00:06.426+0900] {subprocess.py:93} INFO - 24/08/27 11:00:06 INFO ResourceProfile: Limiting resource is cpu
+[2024-08-27T11:00:06.427+0900] {subprocess.py:93} INFO - 24/08/27 11:00:06 INFO ResourceProfileManager: Added ResourceProfile id: 0
+[2024-08-27T11:00:06.478+0900] {subprocess.py:93} INFO - 24/08/27 11:00:06 INFO SecurityManager: Changing view acls to: kyuseok00
+[2024-08-27T11:00:06.478+0900] {subprocess.py:93} INFO - 24/08/27 11:00:06 INFO SecurityManager: Changing modify acls to: kyuseok00
+[2024-08-27T11:00:06.479+0900] {subprocess.py:93} INFO - 24/08/27 11:00:06 INFO SecurityManager: Changing view acls groups to:
+[2024-08-27T11:00:06.480+0900] {subprocess.py:93} INFO - 24/08/27 11:00:06 INFO SecurityManager: Changing modify acls groups to:
+[2024-08-27T11:00:06.481+0900] {subprocess.py:93} INFO - 24/08/27 11:00:06 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users with view permissions: kyuseok00; groups with view permissions: EMPTY; users with modify permissions: kyuseok00; groups with modify permissions: EMPTY
+[2024-08-27T11:00:06.749+0900] {subprocess.py:93} INFO - 24/08/27 11:00:06 INFO Utils: Successfully started service 'sparkDriver' on port 41791.
+[2024-08-27T11:00:06.778+0900] {subprocess.py:93} INFO - 24/08/27 11:00:06 INFO SparkEnv: Registering MapOutputTracker
+[2024-08-27T11:00:06.812+0900] {subprocess.py:93} INFO - 24/08/27 11:00:06 INFO SparkEnv: Registering BlockManagerMaster
+[2024-08-27T11:00:06.831+0900] {subprocess.py:93} INFO - 24/08/27 11:00:06 INFO BlockManagerMasterEndpoint: Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
+[2024-08-27T11:00:06.832+0900] {subprocess.py:93} INFO - 24/08/27 11:00:06 INFO BlockManagerMasterEndpoint: BlockManagerMasterEndpoint up
+[2024-08-27T11:00:06.835+0900] {subprocess.py:93} INFO - 24/08/27 11:00:06 INFO SparkEnv: Registering BlockManagerMasterHeartbeat
+[2024-08-27T11:00:06.856+0900] {subprocess.py:93} INFO - 24/08/27 11:00:06 INFO DiskBlockManager: Created local directory at /tmp/blockmgr-c865dd18-f97a-475b-b26b-9f97310ab09b
+[2024-08-27T11:00:06.876+0900] {subprocess.py:93} INFO - 24/08/27 11:00:06 INFO MemoryStore: MemoryStore started with capacity 434.4 MiB
+[2024-08-27T11:00:06.907+0900] {subprocess.py:93} INFO - 24/08/27 11:00:06 INFO SparkEnv: Registering OutputCommitCoordinator
+[2024-08-27T11:00:07.006+0900] {subprocess.py:93} INFO - 24/08/27 11:00:07 INFO JettyUtils: Start Jetty 0.0.0.0:4040 for SparkUI
+[2024-08-27T11:00:07.057+0900] {subprocess.py:93} INFO - 24/08/27 11:00:07 INFO Utils: Successfully started service 'SparkUI' on port 4040.
+[2024-08-27T11:00:07.169+0900] {subprocess.py:93} INFO - 24/08/27 11:00:07 INFO Executor: Starting executor ID driver on host 10.255.255.254
+[2024-08-27T11:00:07.170+0900] {subprocess.py:93} INFO - 24/08/27 11:00:07 INFO Executor: OS info Linux, 5.15.153.1-microsoft-standard-WSL2, amd64
+[2024-08-27T11:00:07.170+0900] {subprocess.py:93} INFO - 24/08/27 11:00:07 INFO Executor: Java version 17.0.12
+[2024-08-27T11:00:07.179+0900] {subprocess.py:93} INFO - 24/08/27 11:00:07 INFO Executor: Starting executor with user classpath (userClassPathFirst = false): ''
+[2024-08-27T11:00:07.180+0900] {subprocess.py:93} INFO - 24/08/27 11:00:07 INFO Executor: Created or updated repl class loader org.apache.spark.util.MutableURLClassLoader@e83169f for default.
+[2024-08-27T11:00:07.199+0900] {subprocess.py:93} INFO - 24/08/27 11:00:07 INFO Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 45079.
+[2024-08-27T11:00:07.199+0900] {subprocess.py:93} INFO - 24/08/27 11:00:07 INFO NettyBlockTransferService: Server created on 10.255.255.254:45079
+[2024-08-27T11:00:07.201+0900] {subprocess.py:93} INFO - 24/08/27 11:00:07 INFO BlockManager: Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+[2024-08-27T11:00:07.208+0900] {subprocess.py:93} INFO - 24/08/27 11:00:07 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, 10.255.255.254, 45079, None)
+[2024-08-27T11:00:07.213+0900] {subprocess.py:93} INFO - 24/08/27 11:00:07 INFO BlockManagerMasterEndpoint: Registering block manager 10.255.255.254:45079 with 434.4 MiB RAM, BlockManagerId(driver, 10.255.255.254, 45079, None)
+[2024-08-27T11:00:07.215+0900] {subprocess.py:93} INFO - 24/08/27 11:00:07 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, 10.255.255.254, 45079, None)
+[2024-08-27T11:00:07.217+0900] {subprocess.py:93} INFO - 24/08/27 11:00:07 INFO BlockManager: Initialized BlockManager: BlockManagerId(driver, 10.255.255.254, 45079, None)
+[2024-08-27T11:00:12.798+0900] {subprocess.py:93} INFO - 24/08/27 11:00:12 INFO SparkContext: SparkContext is stopping with exitCode 0.
+[2024-08-27T11:00:12.820+0900] {subprocess.py:93} INFO - 24/08/27 11:00:12 INFO SparkUI: Stopped Spark web UI at http://10.255.255.254:4040
+[2024-08-27T11:00:12.835+0900] {subprocess.py:93} INFO - 24/08/27 11:00:12 INFO MapOutputTrackerMasterEndpoint: MapOutputTrackerMasterEndpoint stopped!
+[2024-08-27T11:00:12.845+0900] {subprocess.py:93} INFO - 24/08/27 11:00:12 INFO MemoryStore: MemoryStore cleared
+[2024-08-27T11:00:12.845+0900] {subprocess.py:93} INFO - 24/08/27 11:00:12 INFO BlockManager: BlockManager stopped
+[2024-08-27T11:00:12.859+0900] {subprocess.py:93} INFO - 24/08/27 11:00:12 INFO BlockManagerMaster: BlockManagerMaster stopped
+[2024-08-27T11:00:12.861+0900] {subprocess.py:93} INFO - 24/08/27 11:00:12 INFO OutputCommitCoordinator$OutputCommitCoordinatorEndpoint: OutputCommitCoordinator stopped!
+[2024-08-27T11:00:12.869+0900] {subprocess.py:93} INFO - 24/08/27 11:00:12 INFO SparkContext: Successfully stopped SparkContext
+[2024-08-27T11:00:12.994+0900] {subprocess.py:93} INFO - 24/08/27 11:00:12 INFO ShutdownHookManager: Shutdown hook called
+[2024-08-27T11:00:12.994+0900] {subprocess.py:93} INFO - 24/08/27 11:00:12 INFO ShutdownHookManager: Deleting directory /tmp/spark-56662bd7-2d95-4556-89e8-aec2f90de198/pyspark-02af42d3-484f-4892-937f-c2f95ef12b03
+[2024-08-27T11:00:12.997+0900] {subprocess.py:93} INFO - 24/08/27 11:00:12 INFO ShutdownHookManager: Deleting directory /tmp/spark-56662bd7-2d95-4556-89e8-aec2f90de198
+[2024-08-27T11:00:12.999+0900] {subprocess.py:93} INFO - 24/08/27 11:00:12 INFO ShutdownHookManager: Deleting directory /tmp/spark-2f5e8c77-1de1-4721-864a-cf57b85bae6c
+[2024-08-27T11:00:13.029+0900] {subprocess.py:97} INFO - Command exited with return code 0
+[2024-08-27T11:00:13.029+0900] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-08-27T11:00:13.046+0900] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=data_for_audit, task_id=fetch_data, run_id=scheduled__2024-08-27T01:00:00+00:00, execution_date=20240827T010000, start_date=20240827T020003, end_date=20240827T020013
+[2024-08-27T11:00:13.079+0900] {local_task_job_runner.py:243} INFO - Task exited with return code 0
+[2024-08-27T11:00:13.088+0900] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-08-27T11:00:13.089+0900] {local_task_job_runner.py:222} INFO - ::endgroup::
