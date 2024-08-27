@@ -5,7 +5,6 @@ from airflow.operators.bash import BashOperator
 from datetime import datetime, timedelta
 from kafka import KafkaProducer
 from json import dumps
-import os
 
 default_args = {
     'owner': 'airflow',
@@ -22,12 +21,6 @@ dag = DAG(
     schedule='@hourly',
     catchup=False,
 )
-'''
-home_dir = os.path.expanduser("~")
-audit_path = os.path.join(home_dir,'teamproj/data/messages_audit')
-audit_module = os.path.join(home_dir,'teamproj/chat/src/audit/audit.py')
-offset_path = os.path.join(home_dir,'teamproj')
-'''
 
 start_task = EmptyOperator(
     task_id='start',
@@ -42,9 +35,6 @@ end_task = EmptyOperator(
 fetch_task = BashOperator(
     task_id='fetch_data',
     bash_command="""
-        export AUDIT_PATH=$AUDIT_PATH
-        export OFFSET_PATH=$OFFSET_PATH
-        export AUDIT_MODULE=$AUDIT_MODULE
         $SPARK_HOME/bin/spark-submit $AUDIT_MODULE
     """
 )
