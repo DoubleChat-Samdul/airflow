@@ -7,12 +7,12 @@ from json import dumps
 
 def send_kafka_message():
     producer = KafkaProducer(
-        bootstrap_servers=['localhost:9092'],
+        bootstrap_servers=['ec2-43-203-210-250.ap-northeast-2.compute.amazonaws.com:9092'],
         value_serializer=lambda x: dumps(x).encode('utf-8')
     )
     
-    message = {'sender': '[NOTICE]', 'message': '미팅시간 5분 전입니다', 'end': False}
-    producer.send('chatroom', value=message)
+    message = {'sender': '[bot]', 'message': '미팅시간 5분 전입니다', 'end': False}
+    producer.send('team2', value=message)
     producer.flush()
 
 default_args = {
@@ -27,7 +27,7 @@ dag = DAG(
     'send_reminder',
     default_args=default_args,
     description='Sends a reminder message to the chatroom at 9:30 AM',
-    schedule_interval='30 9 * * *',
+    schedule_interval='30 00 * * *',
     catchup=False,
 )
 
