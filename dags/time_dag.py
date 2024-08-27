@@ -4,6 +4,7 @@ from airflow.operators.python import PythonOperator
 from datetime import datetime, timedelta
 from kafka import KafkaProducer
 from json import dumps
+from datetime import datetime
 
 def send_kafka_message():
     producer = KafkaProducer(
@@ -11,7 +12,7 @@ def send_kafka_message():
         value_serializer=lambda x: dumps(x).encode('utf-8')
     )
     
-    message = {'sender': '[bot]', 'message': '미팅시간 5분 전입니다', 'end': False}
+    message = {'sender': '[bot]', 'message': '미팅시간 5분 전입니다', 'end': False, 'timestamp': datetime.now().isoformat()}
     producer.send('team2', value=message)
     producer.flush()
 
