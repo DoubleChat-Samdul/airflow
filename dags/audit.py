@@ -39,4 +39,8 @@ fetch_task = BashOperator(
     """
 )
 
-start_task >> fetch_task >> end_task
+utilize_task = EmptyOperator(
+    task_id='process_utilize',
+)
+
+start_task >> fetch_task >> utilize_task >> end_task
