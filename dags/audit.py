@@ -8,6 +8,10 @@ from json import dumps
 import pandas as pd
 import os
 
+AUDIT_PATH = os.getenv('AUDIT_PATH')
+read_path = f'{AUDIT_PATH}/message_audit'
+write_path = f'{AUDIT_PATH}/message_processed'
+
 default_args = {
     'owner': 'airflow',
     'depends_on_past': False,
@@ -26,10 +30,7 @@ dag = DAG(
 
 
 def process_data():
-    output_path = os.getenv('AUDIT_PATH')
-
-    df = pd.read_parquet(output_path)
-
+    df = pd.read_parquet(read_path)
     df = df[df["sender"] != "[INFO]"]
     df = df[df["end"] != True]
     df["message"] = df["message"].str.replace("\n", " ")
@@ -38,7 +39,7 @@ def process_data():
         df["timestamp"] = pd.to_datetime(df["timestamp"], format="%Y-%m-%dT%H:%M:%S.%f")
 
     df["date"] = df["timestamp"].dt.strftime('%Y-%m-%d')
-    df.to_parquet(output_path, partition_cols=['date'], index=False)    
+    df.to_parquet(write_path, partition_cols=['date'], index=False)    
 
 start_task = EmptyOperator(
     task_id='start',
