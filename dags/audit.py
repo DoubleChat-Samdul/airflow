@@ -9,7 +9,7 @@ import pandas as pd
 import os
 
 AUDIT_PATH = os.getenv('AUDIT_PATH')
-read_path = f'{AUDIT_PATH}/message_audit'
+read_path = f'{AUDIT_PATH}/messages_audit'
 write_path = f'{AUDIT_PATH}/message_processed'
 
 default_args = {
