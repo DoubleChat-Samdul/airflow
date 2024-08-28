@@ -37,8 +37,10 @@ def process_data():
     
     if df["timestamp"].dtype == 'object': 
         df["timestamp"] = pd.to_datetime(df["timestamp"], format="%Y-%m-%dT%H:%M:%S.%f")
-
+    
+    df["timestamp"] = df["timestamp"].dt.floor('ms')
     df["date"] = df["timestamp"].dt.strftime('%Y-%m-%d')
+    
     df.to_parquet(write_path, partition_cols=['date'], index=False)    
 
 start_task = EmptyOperator(
