@@ -5,6 +5,8 @@ from airflow.operators.bash import BashOperator
 from datetime import datetime, timedelta
 from kafka import KafkaProducer
 from json import dumps
+import pandas as pd
+import os
 
 default_args = {
     'owner': 'airflow',
@@ -21,6 +23,22 @@ dag = DAG(
     schedule='@hourly',
     catchup=False,
 )
+
+
+def process_data():
+    output_path = os.getenv('AUDIT_PATH')
+
+    df = pd.read_parquet(output_path)
+
+    df = df[df["sender"] != "[INFO]"]
+    df = df[df["end"] != True]
+    df["message"] = df["message"].str.replace("\n", " ")
+    
+    if df["timestamp"].dtype == 'object': 
+        df["timestamp"] = pd.to_datetime(df["timestamp"], format="%Y-%m-%dT%H:%M:%S.%f")
+
+    df["date"] = df["timestamp"].dt.strftime('%Y-%m-%d')
+    df.to_parquet(output_path, partition_cols=['date'], index=False)    
 
 start_task = EmptyOperator(
     task_id='start',
@@ -39,8 +57,10 @@ fetch_task = BashOperator(
     """
 )
 
-utilize_task = EmptyOperator(
+utilize_task = PythonOperator(
     task_id='process_utilize',
+    python_callable=process_data,
+    dag=dag,
 )
 
 start_task >> fetch_task >> utilize_task >> end_task
